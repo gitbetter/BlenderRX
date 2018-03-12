@@ -4,7 +4,7 @@ from math import radians
 step_count = 13
 selected = bpy.context.selected_objects[0]
 
-target_dir = 'C:\\Users\\skate\\Desktop\\'
+target_dir = 'C:\\Users\\public\\Desktop\\'
 
 for step in range(0, step_count):
     for obj in bpy.data.objects:
