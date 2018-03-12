@@ -22,5 +22,5 @@ for step in range(0, step_count):
     camera.rotation_euler[2] = radians(step * (pan_angle / step_count))
 
     bpy.data.scenes["Scene"].cycles.film_transparent = True
-    bpy.data.scenes["Scene"].render.filepath = target_dir + camera_pan_%d.jpg' % step
+    bpy.data.scenes["Scene"].render.filepath = '%scamera_pan_%d.jpg' % (target_dir, step)
     bpy.ops.render.render( write_still=True )
